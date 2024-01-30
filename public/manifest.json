@@ -15,9 +15,10 @@
             "<all_urls>"
         ],
         "js": [
-          "assets/index.c5f6bb2f.js",
+          "assets/index.45e81e05.js",
           "props.js",
-          "content.js"
+          "content.js",
+          "b2wordcloud.js"
         ],
         "run_at": "document_start",
         "all_frames": true,
