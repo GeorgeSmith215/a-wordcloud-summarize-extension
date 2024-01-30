@@ -1,0 +1,34 @@
+{
+  "name": "a-wordcloud-summarize",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "to summerize the current page content with wordcloud.",
+  "icons": {
+    "48": "./logo.png"
+  },
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": [
+          "assets/index.c5f6bb2f.js",
+          "props.js",
+          "content.js"
+        ],
+        "run_at": "document_start",
+        "all_frames": true,
+        "match_about_blank": true
+    }
+  ],
+  "permissions": [
+    "fontSettings",
+    "notifications",
+    "storage",
+    "tabs",
+    "<all_urls>"
+  ]
+}
