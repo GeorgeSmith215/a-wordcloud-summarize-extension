@@ -1,6 +1,10 @@
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.action == 'getSource') {
-      sendResponse({ chineseText: extractChinese(document.body.textContent) });
+      const bodyText = document.body.textContent
+      const chineseText = extractChinese(bodyText)
+      sendResponse({ chineseText, bodyText })
+      
+      // sendResponse({ chineseText: bodyText, bodyText: bodyText });
     }
   });
   
@@ -13,4 +17,14 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     var chineseText = chineseMatches ? chineseMatches.join('。') + '。' : '';
     return chineseText;
   }
-  
+
+  function debounce(func, wait) {
+    var timeout;
+    return function (...args) {
+      var context = this;
+      clearTimeout(timeout);
+      timeout = setTimeout(function () {
+        func.apply(context, args);
+      }, wait);
+    };
+  }

@@ -3,6 +3,9 @@ module.exports = {
   alias: {
     "/@/": path.resolve(__dirname, "./src"),
   },
+  build: {
+    minify: false
+  },
   assetsDir: "assets",
   base: "./",
 };

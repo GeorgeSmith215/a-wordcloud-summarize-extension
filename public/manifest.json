@@ -1,8 +1,8 @@
 {
-  "name": "a-wordcloud-summarize",
+  "name": "a-wordcloud-summarize-extension",
   "version": "1.0.0",
   "manifest_version": 2,
-  "description": "to summerize the current page content with wordcloud.",
+  "description": "a chrome extension to summerize the current page content with wordcloud.",
   "icons": {
     "48": "./logo.png"
   },
@@ -20,9 +20,9 @@
           "content.js",
           "b2wordcloud.js"
         ],
-        "run_at": "document_start",
-        "all_frames": true,
-        "match_about_blank": true
+        "run_at": "document_end",
+        "all_frames": false,
+        "match_about_blank": false
     }
   ],
   "permissions": [
