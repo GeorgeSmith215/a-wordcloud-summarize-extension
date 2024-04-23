@@ -1,19 +1,19 @@
 # Features
 ### count word frequency
-![count-word-frequency](./images/字数统计.png)
+![count-word-frequency](./images/count-word-frequency.png)
 
 
 ### generate word cloud
-![generate-word-cloud](./images/词云生成.png)
+![generate-word-cloud](./images/generate-word-cloud.png)
 
 
 ### cusomize text for counting word frequency
-![cusomize text for counting word frequency](./images/自定义文本统计词频.png)
+![cusomize-text-for-counting-word-frequency](./images/cusomize-text-for-counting-word-frequency.png)
 
 
 ### cusomize text for generating word cloud
-![cusomize text for generating word cloud](./images/自定义文本生成词云.png)
+![cusomize-text-for-generating-word-cloud](./images/cusomize-text-for-generating-word-cloud.png)
 
 
 ### Just need to click the cloud-summarize button
-![cloud-summarize logo](./images/logo.png)
+![cloud-summarize-logo](./images/logo.png)
